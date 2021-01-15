@@ -25,7 +25,7 @@ function Portfolio() {
     {
       title: "Condusef",
       img: "condusef",
-      link: "",
+      link: "https://webapps.condusef.gob.mx/Login_RECO/index.jsp",
       description:
         "Desarrollo de aplicaciones web para facilitar la atención a usuarios de servicios financieros.",
     },
@@ -117,6 +117,7 @@ function Portfolio() {
             {PROYECTOS.map((p) => {
               return (
                 <ProyectCard
+                  key={p.title}
                   title={p.title}
                   img={p.img}
                   link={p.link}
