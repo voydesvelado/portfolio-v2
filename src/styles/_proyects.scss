@@ -1,0 +1,61 @@
+.proyects {
+  h3 {
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin: 48px 0;
+  }
+}
+
+.proyects__img {
+  background-color: var(--base-color);
+  width: 100%;
+  height: 540px;
+  @media screen and (max-width: 479px) {
+    height: 340px;
+  }
+}
+
+.proyects__finerio {
+  background-image: url(../assets//png/finerio.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.proyects__random {
+  background-image: url(../assets//png/randomgrad.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.proyects__simplestore {
+  background-image: url(../assets//png/simplestore.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.proyects__card {
+  h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #3f4451;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

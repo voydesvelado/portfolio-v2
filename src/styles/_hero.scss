@@ -1,0 +1,148 @@
+.hero__avatar {
+  height: 160px;
+  width: 160px;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  border-radius: 100%;
+  margin-bottom: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 160px;
+  }
+}
+
+.hero__top {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 48px;
+}
+
+.hero__title {
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 48px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 48px;
+  }
+}
+
+.hero__description {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 48px;
+}
+
+.hero__cta {
+  padding: 20px 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0d0d10;
+  color: white;
+
+  transition: all 300ms ease-in;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.resume__col {
+  p {
+    margin-bottom: 14px;
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin-bottom: 44px;
+  }
+
+  h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #3f4451;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}
+
+.resume__type {
+  margin-bottom: 14px;
+  color: #0d0e10;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.resume__row {
+  margin-bottom: 48px;
+}
+
+.footer {
+  background-color: #f4f6fb;
+
+  p {
+    color: #3f4451;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.cta__main {
+  color: #0d0e10;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 48px;
+}
+
+.loader__text {
+  visibility: hidden;
+  color: #0d0e10;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 48px;
+  @media screen and (max-width: 479px) {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    margin-bottom: 44px;
+  }
+}
+
+.cta__link {
+  color: rgb(243, 206, 177);
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+
+  transition: all 1s ease;
+
+  &:hover {
+    color: #0d0e10;
+  }
+}

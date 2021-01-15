@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/base.scss";
+import Portfolio from "./components/Portfolio";
+import Loader from "./components/Loader";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setLoader(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  return <>{loader ? <Loader /> : <Portfolio />}</>;
 }
 
 export default App;
