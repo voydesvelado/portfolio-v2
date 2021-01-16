@@ -100,7 +100,7 @@ function Portfolio() {
                 especializo en UI/UX Design, Responsive Web Design y SEO.
               </p>
               <a href="mailto:contactochka@gmail.com" className="hero__cta">
-                !Conectemos!
+                ¡Conectemos!
               </a>
             </div>
           </div>

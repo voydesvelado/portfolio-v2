@@ -73,12 +73,14 @@ export default function Resume() {
             <p>HTML / CSS / JS</p>
             <p>React</p>
             <p>SASS</p>
-            <p>Next JS</p>
+            <p>Jquery</p>
+            <p>Next js</p>
             <p>GIT</p>
             <p>SQL</p>
           </div>
           <div className="col-6 col-md-6 resume__col">
             <p>Bootstrap</p>
+            <p>Tailwind CSS</p>
             <p>Lottie</p>
             <p>Figma</p>
             <p>Adobe XD</p>
