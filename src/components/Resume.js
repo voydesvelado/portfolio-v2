@@ -73,10 +73,10 @@ export default function Resume() {
             <p>HTML / CSS / JS</p>
             <p>React</p>
             <p>SASS</p>
-            <p>Jquery</p>
+            <p>API REST</p>
             <p>Next js</p>
+            <p>Jquery</p>
             <p>GIT</p>
-            <p>SQL</p>
           </div>
           <div className="col-6 col-md-6 resume__col">
             <p>Bootstrap</p>

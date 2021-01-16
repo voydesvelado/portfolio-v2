@@ -99,7 +99,7 @@ function Portfolio() {
                 Desarrollo interfaces, diseño experiencias.
               </h1>
               <p className="hero__description">
-                Desarrollador Front-end basado en la Ciudad de México. Me
+                Desarrollador Front-end radicando en la Ciudad de México. Me
                 especializo en UI/UX Design, Responsive Web Design y SEO.
               </p>
               <a href="mailto:contactochka@gmail.com" className="hero__cta">
