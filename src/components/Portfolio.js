@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/base.scss";
+import ReactGA from "react-ga";
 import ProyectCard from "./ProyectCard";
 import Resume from "./Resume";
 import david from "../assets/png/david.png";
@@ -46,6 +47,8 @@ function Portfolio() {
   ];
 
   useEffect(() => {
+    ReactGA.initialize("UA-187483667-1");
+    ReactGA.pageview("/");
     gsap.from(proyectsRef.current, {
       duration: 1.2,
       y: 50,
