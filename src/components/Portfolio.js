@@ -13,6 +13,11 @@ gsap.registerPlugin(ScrollTrigger);
 function Portfolio() {
   const proyectsRef = useRef(null);
   const heroRef = useRef(null);
+  const h1Ref = useRef(null);
+  const h2Ref = useRef(null);
+  const h3Ref = useRef(null);
+  const h4Ref = useRef(null);
+  const h5Ref = useRef(null);
   const ctaRef = useRef(null);
 
   const PROYECTOS = [
@@ -49,6 +54,32 @@ function Portfolio() {
   useEffect(() => {
     ReactGA.initialize("UA-187483667-1");
     ReactGA.pageview("/");
+
+    const tl = gsap.timeline({
+      defaults: { duration: 0.4, ease: "Power3.in" },
+    });
+    tl.to(heroRef.current, 0, { css: { visibility: "visible" } })
+      .from(h1Ref.current, {
+        opacity: 0,
+        y: 50,
+      })
+      .from(h2Ref.current, {
+        opacity: 0,
+        y: 50,
+      })
+      .from(h3Ref.current, {
+        opacity: 0,
+        y: 50,
+      })
+      .from(h4Ref.current, {
+        opacity: 0,
+        y: 50,
+      })
+      .from(h5Ref.current, {
+        opacity: 0,
+        y: 50,
+      });
+
     gsap.from(proyectsRef.current, {
       duration: 1.2,
       y: 50,
@@ -58,12 +89,6 @@ function Portfolio() {
         id: "proyects",
         toggleActions: "play none none reverse",
       },
-    });
-
-    gsap.from(heroRef.current, {
-      duration: 1.2,
-      opacity: 0,
-      ease: "Power3.in",
     });
 
     gsap.from(ctaRef.current, {
@@ -85,24 +110,28 @@ function Portfolio() {
         <div className="container">
           <div className="row d-flex">
             <div className="col-12 d-flex justify-content-center">
-              <div className="hero__avatar">
+              <div className="hero__avatar" ref={h1Ref}>
                 <img alt="David" src={david} />
               </div>
             </div>
           </div>
           <div className="row d-flex justify-content-center text-center">
             <div className="col-12 col-md-9">
-              <h3 className="hero__top">
+              <h3 className="hero__top" ref={h2Ref}>
                 Hola, soy David <span>✌️</span>
               </h3>
-              <h1 className="hero__title">
+              <h1 className="hero__title" ref={h3Ref}>
                 Desarrollo interfaces, diseño experiencias.
               </h1>
-              <p className="hero__description">
+              <p className="hero__description" ref={h4Ref}>
                 Desarrollador Front-end radicando en la Ciudad de México. Me
-                especializo en UI/UX Design, Responsive Web Design y SEO.
+                especializo en UI/UX, Responsive Web Design y SEO.
               </p>
-              <a href="mailto:contactochka@gmail.com" className="hero__cta">
+              <a
+                href="mailto:contactochka@gmail.com"
+                className="hero__cta"
+                ref={h5Ref}
+              >
                 ¡Conectemos!
               </a>
             </div>

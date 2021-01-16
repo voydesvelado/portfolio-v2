@@ -85,7 +85,7 @@ export default function Resume() {
             <p>Figma</p>
             <p>Adobe XD</p>
             <p>GSAP</p>
-            <p>Visual Studio Code</p>
+            <p>VSCode</p>
           </div>
         </div>
       </div>

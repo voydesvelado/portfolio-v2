@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   const [loader, setLoader] = useState(true);
   useEffect(() => {
-    const timer = setTimeout(() => setLoader(false), 2000);
+    const timer = setTimeout(() => setLoader(false), 2100);
     return () => clearTimeout(timer);
   }, []);
   return <>{loader ? <Loader /> : <Portfolio />}</>;
