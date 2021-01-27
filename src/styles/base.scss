@@ -39,3 +39,24 @@ a {
     margin-bottom: 48px;
   }
 }
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.nav__button {
+  background-color: white;
+  color: #0d0d10;
+  font-size: 14px;
+  text-decoration: underline;
+  border: none;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}

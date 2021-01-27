@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/base.scss";
 import ReactGA from "react-ga";
 import ProyectCard from "./ProyectCard";
+import Navbar from "./Navbar";
 import Resume from "./Resume";
 import david from "../assets/png/david.png";
 import gsap from "gsap";
@@ -10,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Portfolio() {
+function Portfolio({ t, lang, handleEn, handleEs }) {
   const proyectsRef = useRef(null);
   const heroRef = useRef(null);
   const h1Ref = useRef(null);
@@ -105,6 +106,9 @@ function Portfolio() {
 
   return (
     <div>
+      {/* navbar lang */}
+      <Navbar t={t} lang={lang} handleEn={handleEn} handleEs={handleEs} />
+
       {/* hero section */}
       <main className="hero__banner py-4 mb-5" ref={heroRef}>
         <div className="container">
@@ -118,21 +122,21 @@ function Portfolio() {
           <div className="row d-flex justify-content-center text-center">
             <div className="col-12 col-md-9">
               <h3 className="hero__top" ref={h2Ref}>
-                Hola, soy David <span>✌️</span>
+                {t("hero.t1")}
+                <span>✌️</span>
               </h3>
               <h1 className="hero__title" ref={h3Ref}>
-                Desarrollo interfaces, diseño experiencias.
+                {t("hero.t2")}
               </h1>
               <p className="hero__description" ref={h4Ref}>
-                Desarrollador Front-end radicando en la Ciudad de México. Me
-                especializo en UI/UX, Responsive Web Design y SEO.
+                {t("hero.t3")}
               </p>
               <a
                 href="mailto:contactochka@gmail.com"
                 className="hero__cta"
                 ref={h5Ref}
               >
-                ¡Conectemos!
+                {t("hero.cta")}
               </a>
             </div>
           </div>
@@ -144,7 +148,7 @@ function Portfolio() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-6">
-              <h3>Trabajos que he realizado.</h3>
+              <h3>{t("proyects.t1")}</h3>
             </div>
           </div>
           <div className="row">
@@ -155,7 +159,7 @@ function Portfolio() {
                   title={p.title}
                   img={p.img}
                   link={p.link}
-                  description={p.description}
+                  t={t}
                 />
               );
             })}
@@ -163,19 +167,16 @@ function Portfolio() {
         </div>
       </section>
 
-      <Resume />
+      <Resume t={t} />
 
       {/* call to action */}
       <section ref={ctaRef}>
         <div className="container py-4 mb-5">
           <div className="row d-flex justify-content-center">
             <div className="col-12 col-md-8">
-              <h4 className="cta__main">
-                Colaboremos, estoy dispuesto a escuchar tu oferta de trabajo o
-                freelance.
-              </h4>
+              <h4 className="cta__main">{t("cta.t1")}</h4>
               <a href="mailto:contactochka@gmail.com" className="cta__link">
-                contactar
+                {t("cta.mail")}
               </a>
             </div>
           </div>
@@ -187,7 +188,7 @@ function Portfolio() {
         <div className="container">
           <div className="row py-4">
             <div className="col-12 text-center">
-              <p>Diseñado y desarrollado por David Herrera</p>
+              <p>{t("cta.footer")}</p>
             </div>
           </div>
         </div>

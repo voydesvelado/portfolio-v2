@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProyectCard = ({ title, description, img, link }) => {
+const ProyectCard = ({ title, img, link, t }) => {
   return (
     <a
       className="col-12 col-md-6 mb-4"
@@ -12,7 +12,7 @@ const ProyectCard = ({ title, description, img, link }) => {
       <div className="proyects__card">
         <div className={`proyects__img proyects__${img}`}></div>
         <h5 className="mt-3">{title}</h5>
-        <p className="mb-3">{description}</p>
+        <p className="mb-3">{t(`proyects.${img}`)}</p>
       </div>
     </a>
   );

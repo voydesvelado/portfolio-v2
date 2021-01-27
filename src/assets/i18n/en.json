@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "t1": "Hi, I'm David ",
+    "t2": "Developing digital products and experiences.",
+    "t3": "Front-end developer based in Mexico City. I specialize in UI/UX, Responsive Web Design and SEO.",
+    "cta": "Let's connect!",
+    "nav": "Español"
+  },
+  "proyects": {
+    "t1": "Work I've done.",
+    "finerio": "Landing page of one of the most important fintechs in Mexico and all of Latin America",
+    "condusef": "Development of web applications to facilitate the attention of financial services users",
+    "random": "Random css gradient generator app, copy instantly your favorite",
+    "simplestore": "Minimalist mockup of an online store. Simple and straight to the point layout"  
+  },
+  "resume": {
+    "t1": "Resume",
+    "t2": "Work experience",
+    "p1": "Front-end Developer",
+    "t3": "Education",
+    "p2": "Instituto Politécnico Nacional",
+    "p3": "Computer science degree",
+    "p4": "current",
+    "t4": "Skills",
+    "t5": "Development",
+    "t6": "Design",
+    "t7": "Tools"
+  },
+  "cta": {
+    "t1": "Let's collaborate, I am willing to listen to your job or freelance offer.",
+    "mail": "contact",
+    "footer": "Designed and developed by David Herrera."
+  }
+ }

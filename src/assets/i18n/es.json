@@ -1,0 +1,34 @@
+{
+ "hero": {
+   "t1": "Hola, soy David ",
+   "t2": "Desarrollo interfaces, diseño experiencias.",
+   "t3": "Desarrollador Front-end radicando en la Ciudad de México. Me especializo en UI/UX, Responsive Web Design y SEO.",
+   "cta": "¡Conectemos!",
+   "nav": "English"
+ },
+ "proyects": {
+   "t1": "Trabajos que he realizado.",
+   "finerio": "Landing page de una de las fintechs más importantes en México y toda Latinoamérica",
+   "condusef": "Desarrollo de aplicaciones web para facilitar la atención a usuarios de servicios financieros",
+   "gradient": "Aplicación generadora de gradientes aleatorios listos para usarse en css",
+   "store": "Maqueta minimalista de una tienda en línea. Layout simple y straight to the point"
+ },
+ "resume": {
+   "t1": "Currículum",
+   "t2": "Experiencia de trabajo",
+   "p1": "Desarrollador Front-end",
+   "t3": "Educación",
+   "p2": "Instituto Politécnico Nacional",
+   "p3": "Lic. Ciencias de la Informática",
+   "p4": "actual",
+   "t4": "Habilidades",
+   "t5": "Desarrollo",
+   "t6": "Diseño",
+   "t7": "Herramientas"
+ },
+ "cta": {
+   "t1": "Colaboremos, estoy dispuesto a escuchar tu oferta de trabajo o freelance.",
+   "mail": "contactar",
+   "footer": "Diseñado y desarrollado por David Herrera"
+ }
+}
