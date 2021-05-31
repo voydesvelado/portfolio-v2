@@ -17,34 +17,6 @@
   }
 }
 
-.proyects__finerio {
-  background-image: url(../assets//png/finerio.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.proyects__random {
-  background-image: url(../assets//png/randomgrad.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.proyects__simplestore {
-  background-image: url(../assets//png/simplestore.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.proyects__condusef {
-  background-image: url(../assets//png/condusef.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .proyects__card {
   h5 {
     font-size: 24px;
@@ -64,5 +36,162 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.projects__container {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.projects__offwhite {
+  background-color: #f9f9f9;
+}
+
+.projects__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 115.5%;
+  margin-bottom: 30px;
+}
+
+.projects__description {
+  color: #656e8d;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 100px;
+}
+
+.projects__tools-title {
+  margin-bottom: 1px;
+}
+
+.projects__tools {
+  color: #656e8d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.projects__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #7976e3;
+  margin-bottom: 30px;
+}
+
+.projects__img {
+  max-width: 100%;
+  display: block;
+  box-shadow: 0px 13.7681px 27.5362px rgba(93, 104, 140, 0.2);
+  background-color: transparent;
+  margin-top: 30px;
+}
+
+// hero section
+.hero__container {
+  visibility: hidden;
+  padding: 110px 0;
+}
+
+.hero__main-title {
+  font-weight: 600;
+  font-size: 130px;
+  line-height: 100.5%;
+  letter-spacing: -0.025em;
+}
+
+.mesh1 {
+  background: url("../assets/png//mesh1.jpg");
+}
+.mesh2 {
+  background: url("../assets/png//mesh2.jpg");
+}
+.mesh3 {
+  background: url("../assets/png//mesh3.jpg");
+}
+.mesh4 {
+  background: url("../assets/png//mesh4.jpg");
+}
+
+.fixed-btn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+.project__negative {
+  margin-top: -100px;
+}
+
+.hero__container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.svg-24 {
+  height: 24px;
+  color: white;
+}
+
+.project__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: -240px;
+}
+
+.project__btn {
+  height: 51px;
+  width: 51px;
+  border-radius: 100%;
+  background-color: #1a1b1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 479px) {
+  .projects__container {
+    padding: 50px 0;
+  }
+
+  .projects__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 30px;
+    letter-spacing: -0.025em;
+  }
+
+  .projects__description {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+
+  .projects__img {
+    margin-top: 30px;
+  }
+
+  .hero__container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .hero__main-title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 100.5%;
+  }
+
+  .svg-24 {
+    height: 24px;
   }
 }
