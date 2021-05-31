@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.56f30bfc.chunk.css",
-    "main.js": "/static/js/main.dbfb69b6.chunk.js",
-    "main.js.map": "/static/js/main.dbfb69b6.chunk.js.map",
+    "main.css": "/static/css/main.23b6c16f.chunk.css",
+    "main.js": "/static/js/main.0c901b4a.chunk.js",
+    "main.js.map": "/static/js/main.0c901b4a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d909eb74.js",
     "runtime-main.js.map": "/static/js/runtime-main.d909eb74.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.4eb135af.chunk.js": "/static/js/2.4eb135af.chunk.js",
-    "static/js/2.4eb135af.chunk.js.map": "/static/js/2.4eb135af.chunk.js.map",
+    "static/js/2.90c4d636.chunk.js": "/static/js/2.90c4d636.chunk.js",
+    "static/js/2.90c4d636.chunk.js.map": "/static/js/2.90c4d636.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.56f30bfc.chunk.css.map": "/static/css/main.56f30bfc.chunk.css.map",
-    "static/js/2.4eb135af.chunk.js.LICENSE.txt": "/static/js/2.4eb135af.chunk.js.LICENSE.txt",
-    "static/media/base.scss": "/static/media/simplestore.2dabcba0.png",
-    "static/media/david.e487956c.png": "/static/media/david.e487956c.png"
+    "static/css/main.23b6c16f.chunk.css.map": "/static/css/main.23b6c16f.chunk.css.map",
+    "static/js/2.90c4d636.chunk.js.LICENSE.txt": "/static/js/2.90c4d636.chunk.js.LICENSE.txt",
+    "static/media/download.e50f35bc.svg": "/static/media/download.e50f35bc.svg",
+    "static/media/mail.1cbff89f.svg": "/static/media/mail.1cbff89f.svg",
+    "static/media/base.scss": "/static/media/mesh4.7d983e52.jpg",
+    "static/media/phone.9647c4ae.svg": "/static/media/phone.9647c4ae.svg",
+    "static/media/pr-1.f7a95a30.png": "/static/media/pr-1.f7a95a30.png",
+    "static/media/pr-2.a7abb5f2.png": "/static/media/pr-2.a7abb5f2.png",
+    "static/media/pr-3.80d829bd.png": "/static/media/pr-3.80d829bd.png",
+    "static/media/pr-4.9ff3b551.png": "/static/media/pr-4.9ff3b551.png",
+    "static/media/pr-5.67f01cd0.png": "/static/media/pr-5.67f01cd0.png",
+    "static/media/whatsapp.534ce650.svg": "/static/media/whatsapp.534ce650.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d909eb74.js",
     "static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.4eb135af.chunk.js",
-    "static/css/main.56f30bfc.chunk.css",
-    "static/js/main.dbfb69b6.chunk.js"
+    "static/js/2.90c4d636.chunk.js",
+    "static/css/main.23b6c16f.chunk.css",
+    "static/js/main.0c901b4a.chunk.js"
   ]
 }
