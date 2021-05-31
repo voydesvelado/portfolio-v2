@@ -12,6 +12,7 @@ import download from "../assets/svg/download.svg";
 import whatsapp from "../assets/svg/whatsapp.svg";
 
 export const Projects = () => {
+  const prRef = useRef(null);
   const heroRef = useRef(null);
   const h1Ref = useRef(null);
   const h2Ref = useRef(null);
@@ -100,6 +101,10 @@ export const Projects = () => {
       .from(h4Ref.current, {
         opacity: 0,
         y: 50,
+      })
+      .from(prRef.current, {
+        opacity: 0,
+        y: 50,
       });
   }, []);
 
@@ -157,44 +162,46 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      {PROJECTS_2021.map((p) => {
-        return (
-          <div
-            key={p.id}
-            className={`projects__container ${
-              p.offwhite && "projects__offwhite"
-            }`}
-          >
-            <div className="container ">
-              <div className="row">
-                <div className="col-12">
-                  <h3 className="projects__title">{p.title}</h3>
+      <div ref={prRef}>
+        {PROJECTS_2021.map((p) => {
+          return (
+            <div
+              key={p.id}
+              className={`projects__container ${
+                p.offwhite && "projects__offwhite"
+              }`}
+            >
+              <div className="container ">
+                <div className="row">
+                  <div className="col-12">
+                    <h3 className="projects__title">{p.title}</h3>
+                  </div>
+                  <div className="col-12 col-lg-10">
+                    <p className="projects__description">{p.description}</p>
+                  </div>
+                  <div className="col-12 col-lg-2">
+                    <h6 className="projects__tools-title">Herramientas</h6>
+                    <p className="projects__tools">{p.tools}</p>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="projects__link"
+                      href={p.link}
+                    >
+                      Visitar sitio
+                    </a>
+                  </div>
                 </div>
-                <div className="col-12 col-lg-10">
-                  <p className="projects__description">{p.description}</p>
-                </div>
-                <div className="col-12 col-lg-2">
-                  <h6 className="projects__tools-title">Herramientas</h6>
-                  <p className="projects__tools">{p.tools}</p>
-                  <a
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="projects__link"
-                    href={p.link}
-                  >
-                    Visitar sitio
-                  </a>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12">
-                  <img className="projects__img" src={p.image} alt="" />
+                <div className="row">
+                  <div className="col-12">
+                    <img className="projects__img" src={p.image} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 };
