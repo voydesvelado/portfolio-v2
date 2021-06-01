@@ -12,6 +12,7 @@ import download from "../assets/svg/download.svg";
 import whatsapp from "../assets/svg/whatsapp.svg";
 
 export const Projects = () => {
+  const mainRef = useRef(null);
   const prRef = useRef(null);
   const heroRef = useRef(null);
   const h1Ref = useRef(null);
@@ -82,7 +83,7 @@ export const Projects = () => {
     const tl = gsap.timeline({
       defaults: { duration: 0.4, ease: "Power3.in" },
     });
-    tl.to(heroRef.current, 0, { css: { visibility: "visible" } })
+    tl.to(mainRef.current, 0, { css: { visibility: "visible" } })
       .from(heroRef.current, {
         opacity: 0,
       })
@@ -105,11 +106,12 @@ export const Projects = () => {
       .from(prRef.current, {
         opacity: 0,
         y: 50,
+        delay: -1.6,
       });
   }, []);
 
   return (
-    <>
+    <div ref={mainRef} className="main-container">
       <div
         className={`hero__container mesh${getRandomArbitrary(1, 5)}`}
         ref={heroRef}
@@ -162,7 +164,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <div ref={prRef}>
+      <div ref={prRef} id="prRef">
         {PROJECTS_2021.map((p) => {
           return (
             <div
@@ -202,6 +204,6 @@ export const Projects = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };

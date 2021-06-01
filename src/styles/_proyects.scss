@@ -92,9 +92,12 @@
   margin-top: 30px;
 }
 
+.main-container {
+  visibility: hidden;
+}
+
 // hero section
 .hero__container {
-  visibility: hidden;
   padding: 110px 0;
 }
 
