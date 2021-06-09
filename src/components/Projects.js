@@ -7,7 +7,6 @@ import pr3 from "../assets/png/pr-3.png";
 import pr4 from "../assets/png/pr-4.png";
 import pr5 from "../assets/png/pr-5.png";
 import mail from "../assets/svg/mail.svg";
-import phone from "../assets/svg/phone.svg";
 import download from "../assets/svg/download.svg";
 import whatsapp from "../assets/svg/whatsapp.svg";
 
@@ -21,13 +20,13 @@ export const Projects = () => {
   const h4Ref = useRef(null);
   const PROJECTS_2021 = [
     {
-      id: 3,
-      title: "Finerio Landing",
+      id: 1,
+      title: "Finerio Magic Link",
       description:
-        "Diseño y desarrollo de landing page para una de las fintech mas importantes en latinoamérica. El objetivo de este producto es dar a conocer los productos de Finerio Connect. El sitio es completamente responsivo.",
-      tools: "Figma, React, SASS, GSAP.",
-      link: "https://finerioconnect.com/",
-      image: pr4,
+        "Magic Link es el producto más importante de Finerio, por lo tanto es constantemente actualizado. Yo me encargué de que las nuevas funciones dentro de esta plataforma fueran fáciles de usar y que el producto luciera premium.",
+      tools: "Figma, Angular, HTML, CSS.",
+      link: "https://magiclink.finerioconnect.com/access/login",
+      image: pr1,
       offwhite: false,
     },
     {
@@ -41,13 +40,13 @@ export const Projects = () => {
       offwhite: true,
     },
     {
-      id: 1,
-      title: "Finerio Magic Link",
+      id: 3,
+      title: "Finerio Landing",
       description:
-        "Magic Link es el producto más importante de Finerio, por lo tanto es constantemente actualizado. Yo me encargué de que las nuevas funciones dentro de esta plataforma fueran fáciles de usar y que el producto luciera premium.",
-      tools: "Figma, Angular, HTML, CSS.",
-      link: "https://magiclink.finerioconnect.com/access/login",
-      image: pr1,
+        "Diseño y desarrollo de landing page para una de las fintech mas importantes en latinoamérica. El objetivo de este producto es dar a conocer los productos de Finerio Connect. El sitio es completamente responsivo.",
+      tools: "Figma, React, SASS, GSAP.",
+      link: "https://finerioconnect.com/",
+      image: pr4,
       offwhite: false,
     },
     {
@@ -148,10 +147,10 @@ export const Projects = () => {
                   className="project__btn"
                   ref={h3Ref}
                 >
-                  <img src={phone} alt="send a message" className="svg-24" />
+                  <img src={whatsapp} alt="send a message" className="svg-24" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1Z6jKJYBX-AaqfWo_iBToAslszq_zKtrX/view"
+                  href="https://drive.google.com/file/d/1pGb_8e0scbqprA3NbMAj9Fxo-QlQd6Z5/view"
                   rel="noopener noreferrer"
                   target="_blank"
                   className="project__btn"
