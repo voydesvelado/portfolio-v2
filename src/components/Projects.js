@@ -1,13 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ReactGA from "react-ga";
-import pr1 from "../assets/png/pr-1.png";
-import pr2 from "../assets/png/pr-2.png";
-import pr3 from "../assets/png/pr-3.png";
-import pr4 from "../assets/png/pr-4.png";
-import pr5 from "../assets/png/pr-5.png";
+
+import pr6 from "../assets/png/Pfm.png";
+import pr7 from "../assets/png/Wizard.png";
+import pr8 from "../assets/png/Synth.png";
+import pr9 from "../assets/png/Efm.png";
+
+// import pr1 from "../assets/png/pr-1.png";
+// import pr2 from "../assets/png/pr-2.png";
+// import pr3 from "../assets/png/pr-3.png";
+// import pr4 from "../assets/png/pr-4.png";
+// import pr5 from "../assets/png/pr-5.png";
 import mail from "../assets/svg/mail.svg";
-import download from "../assets/svg/download.svg";
+// import download from "../assets/svg/download.svg";
 import whatsapp from "../assets/svg/whatsapp.svg";
 
 export const Projects = () => {
@@ -21,54 +27,55 @@ export const Projects = () => {
   const PROJECTS_2021 = [
     {
       id: 1,
-      title: "Finerio Magic Link",
+      title: "Personal Finance Manager",
       description:
-        "Magic Link es el producto más importante de Finerio, por lo tanto es constantemente actualizado. Yo me encargué de que las nuevas funciones dentro de esta plataforma fueran fáciles de usar y que el producto luciera premium.",
-      tools: "Figma, Angular, HTML, CSS.",
+        "<p class='projects__description'>This product allows its users to have complete control of their finances. I was involved in all the design phases of the creation of this application, with an <b>emphasis on making the interface easy to use.</b></p>",
+      tools: "Fintech, Start-up, PFM",
       link: "https://magiclink.finerioconnect.com/access/login",
-      image: pr1,
+      image: pr6,
       offwhite: false,
-    },
-    {
-      id: 2,
-      title: "Finerio Calculadora",
-      description:
-        "Antes de este producto, para explicar el pricing de Finerio a clientes potenciales, se utilizaba una hoja de cálculo que era muy díficil de entender, por eso se creó esta herramienta con el objetivo de ser intuitiva y fácil de usar.",
-      tools: "Figma, React, HTML, SASS.",
-      link: "https://pricing.finerioconnect.com/",
-      image: pr2,
-      offwhite: true,
     },
     {
       id: 3,
-      title: "Finerio Landing",
+      title: "Document Editor",
       description:
-        "Diseño y desarrollo de landing page para una de las fintech mas importantes en latinoamérica. El objetivo de este producto es dar a conocer los productos de Finerio Connect. El sitio es completamente responsivo.",
-      tools: "Figma, React, SASS, GSAP.",
+        "<p class='projects__description'>I was in charge of redesigning this platform, due to its volume it was very difficult to use so I made a lot of<b> tests with users so we could validate the usability.</b></p>",
+      tools: "Synthesis, Redesign, UX Improvement",
       link: "https://finerioconnect.com/",
-      image: pr4,
-      offwhite: false,
-    },
-    {
-      id: 4,
-      title: "Cotizamático Landing",
-      description:
-        "Rediseño de mini landing page con el propósito de hacer lucir más moderna a AARCO (empresa de seguros) y estar a la altura de la actual competencia en el mercado de cotizadores online, se optó por una estética minimalista.",
-      tools: "Figma.",
-      link: "https://www.figma.com/proto/Alsv32dL80ZtjWZHSDf9a3/Landing-Cotizamatico?page-id=1%3A3&node-id=234%3A66&viewport=153%2C490%2C0.8367149829864502&scaling=min-zoom",
-      image: pr3,
+      image: pr8,
       offwhite: true,
     },
     {
-      id: 5,
-      title: "Cotizamático Calculadora",
+      id: 2,
+      title: "Account Aggregator",
       description:
-        "Diseño visual para mini aplicación que te permite conocer el valor estimado de tu hogar. Este proyecto mantiene la misma línea visual de la landing page del cotizamático para generar mayor identidad de la marca.",
-      tools: "Figma.",
-      link: "https://www.figma.com/proto/Alsv32dL80ZtjWZHSDf9a3/Landing-Cotizamatico?page-id=1%3A3&node-id=238%3A0&viewport=-584%2C407%2C0.5590086579322815&scaling=min-zoom",
-      image: pr5,
+        "<p class='projects__description'>This module allows linking bank accounts, so we required an experience that would provide safety to the user and we achieved it with a <b>professional, clean and minimalist UI.</b></p>",
+      tools: "User sentiment, Open Banking, UI Minimalism.",
+      link: "https://pricing.finerioconnect.com/",
+      image: pr7,
       offwhite: false,
     },
+
+    {
+      id: 4,
+      title: "E-commerce Manager",
+      description:
+        "<p class='projects__description'>Design of a dashboard experience and interface that allows its users to have control of their inputs and outputs as an e-commerce business. <b>Easy to use and intuitive.</b></p>",
+      tools: "Dashboard, e-commerce",
+      link: "https://www.figma.com/proto/Alsv32dL80ZtjWZHSDf9a3/Landing-Cotizamatico?page-id=1%3A3&node-id=234%3A66&viewport=153%2C490%2C0.8367149829864502&scaling=min-zoom",
+      image: pr9,
+      offwhite: true,
+    },
+    // {
+    //   id: 5,
+    //   title: "Cotizamático Calculadora",
+    //   description:
+    //     "Diseño visual para mini aplicación que te permite conocer el valor estimado de tu hogar. Este proyecto mantiene la misma línea visual de la landing page del cotizamático para generar mayor identidad de la marca.",
+    //   tools: "Figma.",
+    //   link: "https://www.figma.com/proto/Alsv32dL80ZtjWZHSDf9a3/Landing-Cotizamatico?page-id=1%3A3&node-id=238%3A0&viewport=-584%2C407%2C0.5590086579322815&scaling=min-zoom",
+    //   image: pr5,
+    //   offwhite: false,
+    // },
   ];
 
   function getRandomArbitrary(min, max) {
@@ -112,14 +119,14 @@ export const Projects = () => {
   return (
     <div ref={mainRef} className="main-container">
       <div
-        className={`hero__container mesh${getRandomArbitrary(1, 5)}`}
+        className={`hero__container mesh${getRandomArbitrary(1, 4)}`}
         ref={heroRef}
       >
         <div className="container">
           <div className="row">
             <div className="col-12">
               <h1 className="hero__main-title" ref={h1Ref}>
-                David Herrera, User Experience Engineer
+                David Herrera, UX/UI Designer
               </h1>
             </div>
             <a
@@ -149,7 +156,7 @@ export const Projects = () => {
                 >
                   <img src={whatsapp} alt="send a message" className="svg-24" />
                 </a>
-                <a
+                {/* <a
                   href="https://drive.google.com/file/d/1pGb_8e0scbqprA3NbMAj9Fxo-QlQd6Z5/view"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -157,7 +164,7 @@ export const Projects = () => {
                   ref={h4Ref}
                 >
                   <img src={download} alt="download CV" className="svg-24" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -174,23 +181,32 @@ export const Projects = () => {
             >
               <div className="container ">
                 <div className="row">
+                  {p.id == 1 && (
+                    <div className="col-12">
+                      <p className="projects__showcase">Showcase</p>
+                    </div>
+                  )}
+
                   <div className="col-12">
                     <h3 className="projects__title">{p.title}</h3>
                   </div>
                   <div className="col-12 col-lg-10">
-                    <p className="projects__description">{p.description}</p>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: p.description }}
+                    ></div>
+                    {/* <p className="projects__description">{p.description}</p> */}
                   </div>
                   <div className="col-12 col-lg-2">
-                    <h6 className="projects__tools-title">Herramientas</h6>
+                    <h6 className="projects__tools-title">Key Words</h6>
                     <p className="projects__tools">{p.tools}</p>
-                    <a
+                    {/* <a
                       rel="noopener noreferrer"
                       target="_blank"
                       className="projects__link"
                       href={p.link}
                     >
                       Visitar sitio
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="row">
@@ -202,6 +218,12 @@ export const Projects = () => {
             </div>
           );
         })}
+
+        <div className="projects__footer">
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="mb-0">Made with ❤️ by myself. 2023.</p>
+          </div>
+        </div>
       </div>
     </div>
   );

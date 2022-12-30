@@ -29,7 +29,7 @@ const Loader = () => {
         <div className="row">
           <div className="col-12">
             <h4 className="loader__text text-white text-center" ref={loaderRef}>
-              Has llegado al lugar indicado.
+              You've come to the right place.
             </h4>
           </div>
         </div>
